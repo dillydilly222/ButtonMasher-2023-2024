@@ -51,6 +51,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="5BO-GF-JvL"/>
                     <connections>
+                        <outlet property="startButton" destination="EaV-2S-R1V" id="1HG-TN-2ln"/>
                         <outlet property="timeLabel" destination="MMv-j9-OER" id="Lj6-HY-897"/>
                         <segue destination="mGE-9d-ShV" kind="show" identifier="finalSegue" id="pMv-vS-j00"/>
                     </connections>
@@ -73,6 +74,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zL9-fQ-vyK">
+                                <rect key="frame" x="176" y="554" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                <connections>
+                                    <action selector="startGame:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="Qh6-bH-NnJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CU-fS-hCA">
+                                <rect key="frame" x="119" y="308" width="176" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="buttonPresser" title=""/>
+                                <connections>
+                                    <action selector="increaseTotalClicks:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="p47-9A-a61"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6l5-EY-a5q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -228,6 +247,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQl-ap-l5v">
+                                <rect key="frame" x="176" y="554" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                <connections>
+                                    <action selector="startGame:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="mNl-Sy-F9j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEX-9s-abf">
+                                <rect key="frame" x="119" y="308" width="176" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="buttonPresser" title=""/>
+                                <connections>
+                                    <action selector="increaseTotalClicks:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="Q7c-W4-iAe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6pp-BP-Nw8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -292,6 +329,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA7-Nc-aiy">
+                                <rect key="frame" x="176" y="554" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                <connections>
+                                    <action selector="startGame:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="u5z-RO-Pmh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTJ-Ec-Cuz">
+                                <rect key="frame" x="119" y="308" width="176" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="buttonPresser" title=""/>
+                                <connections>
+                                    <action selector="increaseTotalClicks:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="OnI-uX-5R5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KOM-Xj-O9z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -324,6 +379,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nn9-pl-fLM">
+                                <rect key="frame" x="176" y="554" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                <connections>
+                                    <action selector="startGame:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="X0V-5C-bkO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5f-QS-YRM">
+                                <rect key="frame" x="119" y="308" width="176" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="buttonPresser" title=""/>
+                                <connections>
+                                    <action selector="increaseTotalClicks:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="6IN-r4-rSE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BMj-4a-VZW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
