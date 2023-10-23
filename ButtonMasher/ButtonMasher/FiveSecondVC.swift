@@ -10,6 +10,9 @@ import UIKit
 class FiveSecondVC: UIViewController {
     
    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var startButton: UIButton!
+    
+    
     
     var seconds = 5
     var timer = Timer()
@@ -28,6 +31,7 @@ class FiveSecondVC: UIViewController {
     
     @IBAction func startGame(_ sender: UIButton) {
         runTimer()
+        startButton.isEnabled = false
     }
     
     func runTimer() {
@@ -40,6 +44,7 @@ class FiveSecondVC: UIViewController {
         if (seconds <= 0) {
             timer.invalidate()
             self.performSegue(withIdentifier: "finalSegue", sender: self)
+            startButton.isEnabled = true
         }
     }
     

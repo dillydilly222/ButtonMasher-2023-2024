@@ -55,7 +55,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="5BO-GF-JvL"/>
                     <connections>
-                        <outlet property="startButton" destination="EaV-2S-R1V" id="1HG-TN-2ln"/>
+                        <outlet property="startButton" destination="EaV-2S-R1V" id="2nV-JO-bgw"/>
                         <outlet property="timeLabel" destination="MMv-j9-OER" id="Lj6-HY-897"/>
                         <segue destination="mGE-9d-ShV" kind="show" identifier="finalSegue" id="pMv-vS-j00"/>
                     </connections>
@@ -126,7 +126,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="5 seconds"/>
                                         <connections>
-                                            <segue destination="5d1-Mz-aiZ" kind="show" id="lWx-vI-hwD"/>
+                                            <segue destination="5d1-Mz-aiZ" kind="show" id="a2y-C1-bop"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhV-Sm-9p6">
@@ -421,7 +421,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6nz-0L-8lk"/>
+        <segue reference="pMv-vS-j00"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="buttonPresser" width="152" height="150"/>
