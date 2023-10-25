@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wJc-nU-Tey">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,9 +12,9 @@
         <!--Five SecondVC-->
         <scene sceneID="gCi-5f-1r7">
             <objects>
-                <viewController id="5d1-Mz-aiZ" customClass="FiveSecondVC" customModule="ButtonMasher" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="5d1-Mz-aiZ" customClass="FiveSecondVC" customModule="ButtonMasher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TzY-W9-ubB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMv-j9-OER">
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Times Pressed: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsa-Yz-jHe">
-                                <rect key="frame" x="97" y="657" width="221" height="36"/>
+                                <rect key="frame" x="65" y="659" width="285" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -55,8 +55,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="5BO-GF-JvL"/>
                     <connections>
+                        <outlet property="buttonMash" destination="BpC-Jh-NZu" id="HlJ-dV-XNk"/>
                         <outlet property="startButton" destination="EaV-2S-R1V" id="2nV-JO-bgw"/>
                         <outlet property="timeLabel" destination="MMv-j9-OER" id="Lj6-HY-897"/>
+                        <outlet property="timesPressedLabel" destination="Gsa-Yz-jHe" id="5ZW-Yx-bN6"/>
                         <segue destination="mGE-9d-ShV" kind="show" identifier="finalSegue" id="pMv-vS-j00"/>
                     </connections>
                 </viewController>
@@ -64,12 +66,12 @@
             </objects>
             <point key="canvasLocation" x="1053.6231884057972" y="-775.44642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Fifteen SecondVC-->
         <scene sceneID="xdO-Tu-KZo">
             <objects>
-                <viewController id="fxk-07-1Rs" sceneMemberID="viewController">
+                <viewController id="fxk-07-1Rs" customClass="FifteenSecondVC" customModule="ButtonMasher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zFf-4i-W8O">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgP-Rs-IoG">
@@ -120,16 +122,16 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ButtonMasher" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="ButtonMasher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pxu-mH-98P">
-                                <rect key="frame" x="150" y="348.5" width="114" height="257"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pxu-mH-98P">
+                                <rect key="frame" x="150" y="304.5" width="114" height="257"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrV-YH-HPJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="34.5"/>
+                                        <rect key="frame" x="5.5" y="0.0" width="103" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="5 seconds"/>
                                         <connections>
@@ -137,7 +139,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhV-Sm-9p6">
-                                        <rect key="frame" x="0.0" y="44.5" width="114" height="34.5"/>
+                                        <rect key="frame" x="2" y="44.5" width="110.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="15 seconds"/>
                                         <connections>
@@ -145,7 +147,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ark-Ar-Anb">
-                                        <rect key="frame" x="0.0" y="89" width="114" height="34.5"/>
+                                        <rect key="frame" x="0.5" y="89" width="113.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="30 seconds"/>
                                         <connections>
@@ -153,7 +155,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fut-Ws-55g">
-                                        <rect key="frame" x="0.0" y="133.5" width="114" height="34.5"/>
+                                        <rect key="frame" x="0.5" y="133.5" width="113.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="45 seconds"/>
                                         <connections>
@@ -161,7 +163,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEz-cy-wgT">
-                                        <rect key="frame" x="0.0" y="178" width="114" height="34.5"/>
+                                        <rect key="frame" x="0.5" y="178" width="113.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="60 seconds"/>
                                         <connections>
@@ -183,7 +185,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KOn-Ld-SOu">
-                                <rect key="frame" x="37" y="119" width="341" height="179"/>
+                                <rect key="frame" x="37" y="75" width="341" height="179"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUTTON MASHER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qd-0l-7zO">
                                         <rect key="frame" x="0.0" y="0.0" width="341" height="48"/>
@@ -236,14 +238,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.5217391304348" y="-28.125"/>
+            <point key="canvasLocation" x="1055.072463768116" y="-28.125"/>
         </scene>
-        <!--View Controller-->
+        <!--Thirty SecondVC-->
         <scene sceneID="Be0-Jq-yWi">
             <objects>
-                <viewController id="eyw-Jg-BNK" sceneMemberID="viewController">
+                <viewController id="eyw-Jg-BNK" customClass="ThirtySecondVC" customModule="ButtonMasher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KJI-x3-aVA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sot-2Q-csq">
@@ -291,28 +293,61 @@
             </objects>
             <point key="canvasLocation" x="2028" y="-28"/>
         </scene>
-        <!--View Controller-->
+        <!--FinalVC-->
         <scene sceneID="qdY-Su-ye4">
             <objects>
-                <viewController id="mGE-9d-ShV" sceneMemberID="viewController">
+                <viewController id="mGE-9d-ShV" customClass="FinalVC" customModule="ButtonMasher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pe5-Mr-xW6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You pressed the button 0 times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMi-DG-ciq">
+                                <rect key="frame" x="20" y="269" width="374" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="in 60 seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdo-Oe-B4a">
+                                <rect key="frame" x="126" y="361" width="163" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try and get higher next time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ub-LL-zxB">
+                                <rect key="frame" x="17" y="545" width="381" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZL-Ny-rIq">
+                                <rect key="frame" x="173" y="717" width="70" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8MZ-Fb-Ptr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="b1z-3o-nRC"/>
+                    <connections>
+                        <outlet property="infoLabel1" destination="QMi-DG-ciq" id="nKi-Lc-kj1"/>
+                        <outlet property="infoLabel2" destination="Hdo-Oe-B4a" id="RC2-yP-Hbi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCo-t7-4kd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3255" y="-28"/>
+            <point key="canvasLocation" x="3253.6231884057975" y="-28.125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zf1-LV-2hY">
             <objects>
                 <viewController id="vJ9-3I-cjC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="77d-nX-lw3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="x3e-YD-tQk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -323,12 +358,12 @@
             </objects>
             <point key="canvasLocation" x="130" y="688"/>
         </scene>
-        <!--View Controller-->
+        <!--Sixty SecondVC-->
         <scene sceneID="WD2-ii-yf9">
             <objects>
-                <viewController id="6fk-7c-jF4" sceneMemberID="viewController">
+                <viewController id="6fk-7c-jF4" customClass="SixtySecondVC" customModule="ButtonMasher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GLO-mm-K6p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkQ-KP-JhV">
@@ -376,12 +411,12 @@
             </objects>
             <point key="canvasLocation" x="1055" y="688"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourty Five SecondVC-->
         <scene sceneID="d1b-kd-7ph">
             <objects>
-                <viewController id="HDg-Nb-BdA" sceneMemberID="viewController">
+                <viewController id="HDg-Nb-BdA" customClass="FourtyFiveSecondVC" customModule="ButtonMasher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Br9-Rq-io6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="45 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bup-Hj-6XD">
@@ -429,27 +464,9 @@
             </objects>
             <point key="canvasLocation" x="2028" y="689"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="uF4-y2-3ll">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wJc-nU-Tey" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y4H-cQ-U7B">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jWY-fI-WFR"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CLq-gS-CR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pMv-vS-j00"/>
+        <segue reference="dzI-kM-FUa"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="buttonPresser" width="152" height="150"/>

@@ -14,6 +14,11 @@
 		24083CDB2ADDB1620070B35A /* ButtonMasher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24083CD92ADDB1620070B35A /* ButtonMasher.xcdatamodeld */; };
 		24083CDD2ADDB1630070B35A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24083CDC2ADDB1630070B35A /* Assets.xcassets */; };
 		24083CE02ADDB1630070B35A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24083CDE2ADDB1630070B35A /* LaunchScreen.storyboard */; };
+		2496532E2AE98417009D985C /* FinalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496532D2AE98417009D985C /* FinalVC.swift */; };
+		249653302AE98F64009D985C /* FifteenSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496532F2AE98F64009D985C /* FifteenSecondVC.swift */; };
+		249653322AE98F80009D985C /* FourtyFiveSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249653312AE98F80009D985C /* FourtyFiveSecondVC.swift */; };
+		249653342AE98FB1009D985C /* ThirtySecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249653332AE98FB1009D985C /* ThirtySecondVC.swift */; };
+		249653362AE98FBF009D985C /* SixtySecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249653352AE98FBF009D985C /* SixtySecondVC.swift */; };
 		24D1D5432ADF00B200834936 /* FiveSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D1D5422ADF00B200834936 /* FiveSecondVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +32,11 @@
 		24083CDC2ADDB1630070B35A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24083CDF2ADDB1630070B35A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24083CE12ADDB1630070B35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2496532D2AE98417009D985C /* FinalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalVC.swift; sourceTree = "<group>"; };
+		2496532F2AE98F64009D985C /* FifteenSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifteenSecondVC.swift; sourceTree = "<group>"; };
+		249653312AE98F80009D985C /* FourtyFiveSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourtyFiveSecondVC.swift; sourceTree = "<group>"; };
+		249653332AE98FB1009D985C /* ThirtySecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirtySecondVC.swift; sourceTree = "<group>"; };
+		249653352AE98FBF009D985C /* SixtySecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtySecondVC.swift; sourceTree = "<group>"; };
 		24D1D5422ADF00B200834936 /* FiveSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +74,11 @@
 				24083CD22ADDB1620070B35A /* SceneDelegate.swift */,
 				24083CD42ADDB1620070B35A /* ViewController.swift */,
 				24D1D5422ADF00B200834936 /* FiveSecondVC.swift */,
+				2496532F2AE98F64009D985C /* FifteenSecondVC.swift */,
+				249653332AE98FB1009D985C /* ThirtySecondVC.swift */,
+				249653312AE98F80009D985C /* FourtyFiveSecondVC.swift */,
+				249653352AE98FBF009D985C /* SixtySecondVC.swift */,
+				2496532D2AE98417009D985C /* FinalVC.swift */,
 				24083CD62ADDB1620070B35A /* Main.storyboard */,
 				24083CDC2ADDB1630070B35A /* Assets.xcassets */,
 				24083CDE2ADDB1630070B35A /* LaunchScreen.storyboard */,
@@ -147,8 +162,13 @@
 				24083CD52ADDB1620070B35A /* ViewController.swift in Sources */,
 				24D1D5432ADF00B200834936 /* FiveSecondVC.swift in Sources */,
 				24083CDB2ADDB1620070B35A /* ButtonMasher.xcdatamodeld in Sources */,
+				249653322AE98F80009D985C /* FourtyFiveSecondVC.swift in Sources */,
 				24083CD12ADDB1620070B35A /* AppDelegate.swift in Sources */,
 				24083CD32ADDB1620070B35A /* SceneDelegate.swift in Sources */,
+				249653302AE98F64009D985C /* FifteenSecondVC.swift in Sources */,
+				2496532E2AE98417009D985C /* FinalVC.swift in Sources */,
+				249653362AE98FBF009D985C /* SixtySecondVC.swift in Sources */,
+				249653342AE98FB1009D985C /* ThirtySecondVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
