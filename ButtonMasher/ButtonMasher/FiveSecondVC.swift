@@ -49,7 +49,7 @@ class FiveSecondVC: UIViewController {
     }
     
     @objc func updateTimer() {
-        seconds -= 1
+        seconds -= 2
         timeLabel.text = "\(seconds) seconds"
         if (seconds <= 0) {
             timer.invalidate()
