@@ -16,9 +16,7 @@ class FifteenSecondVC: UIViewController {
     @IBOutlet weak var timesPressedLabel: UILabel!
     
     
-    
-    
-    var seconds = 5.00
+    var seconds = 15.00
     var timer = Timer()
     var isTimerRunning = false
     var timesPressedCount = 0
@@ -29,8 +27,6 @@ class FifteenSecondVC: UIViewController {
         timesPressedLabel.text = ("Times Pressed: 0")
         timesPressedCount = 0
         buttonMash.isEnabled = false
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func increaseTotalClicks(_ sender: UIButton) {
@@ -38,25 +34,29 @@ class FifteenSecondVC: UIViewController {
         timesPressedLabel.text = ("Times Pressed: \(timesPressedCount)")
     }
     
-    @IBAction func startGame(_ sender: UIButton) {
+    @IBAction func startGame(_ sender: Any) {
         runTimer()
         startButton.isEnabled = false
         buttonMash.isEnabled = true;
     }
+    
     
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
     }
     
     @objc func updateTimer() {
-        seconds -= 0.01
-        let roundedSeconds = NSString(format: "%.2f", seconds)
-        timeLabel.text = "\(roundedSeconds)"
-        if (seconds <= 0) {
+        if (seconds <= 0.00) {
             timer.invalidate()
             self.performSegue(withIdentifier: "finalSegue", sender: self)
             startButton.isEnabled = true
+            timeLabel.text = "0.00"
+        } else {
+            seconds -= 0.01
+            let roundedSeconds = NSString(format: "%.2f", seconds)
+            timeLabel.text = "\(roundedSeconds)"
         }
+        
     }
     
     
@@ -66,7 +66,7 @@ class FifteenSecondVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let finalVC = segue.destination as! FinalVC
         finalVC.infoLabelText1 = ("You pressed the button \(timesPressedCount) times")
-        finalVC.infoLabelText2 = ("In 5 seconds")
+        finalVC.infoLabelText2 = ("In 15 seconds")
     }
     
 

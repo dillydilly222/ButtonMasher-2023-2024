@@ -81,7 +81,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Start"/>
                                 <connections>
                                     <action selector="startGame:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="Qh6-bH-NnJ"/>
-                                    <action selector="startTimer:" destination="fxk-07-1Rs" eventType="touchUpInside" id="x8T-pt-6XL"/>
+                                    <action selector="startGame:" destination="fxk-07-1Rs" eventType="touchUpInside" id="fNd-kM-vWU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CU-fS-hCA">
@@ -102,7 +102,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgP-Rs-IoG">
-                                <rect key="frame" x="164" y="205" width="104" height="30"/>
+                                <rect key="frame" x="176" y="194" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" systemColor="systemGray6Color"/>
@@ -134,10 +134,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pxu-mH-98P">
-                                <rect key="frame" x="150" y="304.5" width="114" height="257"/>
+                                <rect key="frame" x="150" y="304.5" width="114" height="301"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrV-YH-HPJ">
-                                        <rect key="frame" x="5.5" y="0.0" width="103" height="34.5"/>
+                                        <rect key="frame" x="5.5" y="0.0" width="103" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="5 seconds"/>
                                         <connections>
@@ -145,7 +145,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhV-Sm-9p6">
-                                        <rect key="frame" x="2" y="44.5" width="110.5" height="34.5"/>
+                                        <rect key="frame" x="2" y="52" width="110.5" height="41.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="15 seconds"/>
                                         <connections>
@@ -153,7 +153,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ark-Ar-Anb">
-                                        <rect key="frame" x="0.5" y="89" width="113.5" height="34.5"/>
+                                        <rect key="frame" x="0.5" y="103.5" width="113.5" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="30 seconds"/>
                                         <connections>
@@ -161,7 +161,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fut-Ws-55g">
-                                        <rect key="frame" x="0.5" y="133.5" width="113.5" height="34.5"/>
+                                        <rect key="frame" x="0.5" y="155.5" width="113.5" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="45 seconds"/>
                                         <connections>
@@ -169,7 +169,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEz-cy-wgT">
-                                        <rect key="frame" x="0.5" y="178" width="113.5" height="34.5"/>
+                                        <rect key="frame" x="0.5" y="207.5" width="113.5" height="41.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="60 seconds"/>
                                         <connections>
@@ -177,7 +177,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIo-Xy-Ft5">
-                                        <rect key="frame" x="0.0" y="222.5" width="114" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="259" width="114" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Instructions"/>
                                         <connections>
@@ -254,19 +254,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sot-2Q-csq">
-                                <rect key="frame" x="143" y="204" width="128" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" systemColor="systemGray6Color"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQl-ap-l5v">
                                 <rect key="frame" x="176" y="557" width="62" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start"/>
                                 <connections>
+                                    <action selector="startGame:" destination="eyw-Jg-BNK" eventType="touchUpInside" id="Kh5-IE-Ctg"/>
                                     <action selector="startGame:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="mNl-Sy-F9j"/>
                                 </connections>
                             </button>
@@ -277,12 +271,20 @@
                                 <buttonConfiguration key="configuration" style="plain" image="buttonPresser" title=""/>
                                 <connections>
                                     <action selector="increaseTotalClicks:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="Q7c-W4-iAe"/>
+                                    <action selector="increaseTotalClicks:" destination="eyw-Jg-BNK" eventType="touchUpInside" id="Qyu-CS-QV7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Times Pressed: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ks2-KM-iEu">
-                                <rect key="frame" x="97" y="652" width="221" height="36"/>
+                                <rect key="frame" x="97" y="652" width="266" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sot-2Q-csq">
+                                <rect key="frame" x="174" y="202" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" systemColor="systemGray6Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -292,12 +294,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="qEm-he-xsH"/>
                     <connections>
+                        <outlet property="buttonMash" destination="cEX-9s-abf" id="u4J-qs-ypS"/>
+                        <outlet property="startButton" destination="uQl-ap-l5v" id="Nyz-Ix-km4"/>
+                        <outlet property="timeLabel" destination="Sot-2Q-csq" id="UeS-cQ-Sgn"/>
+                        <outlet property="timesPressedLabel" destination="Ks2-KM-iEu" id="nfE-8c-qDl"/>
                         <segue destination="mGE-9d-ShV" kind="show" identifier="finalSegue" id="6nz-0L-8lk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kb-eI-6Yc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2028" y="-28"/>
+            <point key="canvasLocation" x="2027.5362318840582" y="-28.125"/>
         </scene>
         <!--FinalVC-->
         <scene sceneID="qdY-Su-ye4">
@@ -372,13 +378,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkQ-KP-JhV">
-                                <rect key="frame" x="143" y="204" width="128" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" systemColor="systemGray6Color"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA7-Nc-aiy">
                                 <rect key="frame" x="176" y="557" width="62" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -386,6 +385,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Start"/>
                                 <connections>
                                     <action selector="startGame:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="u5z-RO-Pmh"/>
+                                    <action selector="startGame:" destination="6fk-7c-jF4" eventType="touchUpInside" id="y4V-gR-0zs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTJ-Ec-Cuz">
@@ -394,13 +394,21 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="buttonPresser" title=""/>
                                 <connections>
+                                    <action selector="increaseTotalClicks:" destination="6fk-7c-jF4" eventType="touchUpInside" id="1q3-rJ-cY6"/>
                                     <action selector="increaseTotalClicks:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="OnI-uX-5R5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Times Pressed: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4q-dI-nOv">
-                                <rect key="frame" x="97" y="660" width="221" height="36"/>
+                                <rect key="frame" x="97" y="660" width="274" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkQ-KP-JhV">
+                                <rect key="frame" x="174" y="200" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" systemColor="systemGray6Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -410,12 +418,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="wfi-ml-Ye0"/>
                     <connections>
+                        <outlet property="buttonMash" destination="bTJ-Ec-Cuz" id="HRp-3m-Tk5"/>
+                        <outlet property="startButton" destination="oA7-Nc-aiy" id="PVa-LU-wnL"/>
+                        <outlet property="timeLabel" destination="bkQ-KP-JhV" id="OW4-nk-fNh"/>
+                        <outlet property="timesPressedLabel" destination="e4q-dI-nOv" id="F8R-V9-THJ"/>
                         <segue destination="mGE-9d-ShV" kind="show" identifier="finalSegue" id="N0n-C0-P4b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TcS-lb-vfg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055" y="688"/>
+            <point key="canvasLocation" x="1053.6231884057972" y="687.72321428571422"/>
         </scene>
         <!--Fourty Five SecondVC-->
         <scene sceneID="d1b-kd-7ph">
@@ -425,13 +437,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="45 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bup-Hj-6XD">
-                                <rect key="frame" x="143.5" y="204" width="127" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" systemColor="systemGray6Color"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nn9-pl-fLM">
                                 <rect key="frame" x="176" y="557" width="62" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -439,6 +444,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Start"/>
                                 <connections>
                                     <action selector="startGame:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="X0V-5C-bkO"/>
+                                    <action selector="startGame:" destination="HDg-Nb-BdA" eventType="touchUpInside" id="fFm-qC-Jii"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5f-QS-YRM">
@@ -448,12 +454,20 @@
                                 <buttonConfiguration key="configuration" style="plain" image="buttonPresser" title=""/>
                                 <connections>
                                     <action selector="increaseTotalClicks:" destination="5d1-Mz-aiZ" eventType="touchUpInside" id="6IN-r4-rSE"/>
+                                    <action selector="increaseTotalClicks:" destination="HDg-Nb-BdA" eventType="touchUpInside" id="Klf-nL-alY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Times Pressed: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buS-YA-fud">
-                                <rect key="frame" x="97" y="649" width="221" height="36"/>
+                                <rect key="frame" x="97" y="649" width="282" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="45.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bup-Hj-6XD">
+                                <rect key="frame" x="174" y="202" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" systemColor="systemGray6Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -463,16 +477,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="Vnl-tB-54l"/>
                     <connections>
+                        <outlet property="buttonMash" destination="E5f-QS-YRM" id="Daj-Ic-HzA"/>
+                        <outlet property="startButton" destination="Nn9-pl-fLM" id="0Ts-WL-HrT"/>
+                        <outlet property="timeLabel" destination="Bup-Hj-6XD" id="0aP-9Q-FVb"/>
+                        <outlet property="timesPressedLabel" destination="buS-YA-fud" id="XLg-Z4-QYt"/>
                         <segue destination="mGE-9d-ShV" kind="show" identifier="finalSegue" id="RwH-Dm-e3y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24R-cC-pne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2028" y="689"/>
+            <point key="canvasLocation" x="2027.5362318840582" y="688.39285714285711"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dzI-kM-FUa"/>
+        <segue reference="N0n-C0-P4b"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="buttonPresser" width="152" height="150"/>
