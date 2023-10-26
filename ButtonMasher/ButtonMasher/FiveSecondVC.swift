@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class FiveSecondVC: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
@@ -16,7 +17,7 @@ class FiveSecondVC: UIViewController {
     
     
     
-    var seconds = 5
+    var seconds = 5.00
     var timer = Timer()
     var isTimerRunning = false
     var timesPressedCount = 0
@@ -29,7 +30,7 @@ class FiveSecondVC: UIViewController {
         timesPressedCount = 0
         buttonMash.isEnabled = false
         
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -44,13 +45,16 @@ class FiveSecondVC: UIViewController {
         buttonMash.isEnabled = true;
     }
     
+    
+        
     func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
     }
     
     @objc func updateTimer() {
-        seconds -= 2
-        timeLabel.text = "\(seconds) seconds"
+        seconds -= 0.01
+        let roundedSeconds = NSString(format: "%.2f", seconds)
+        timeLabel.text = "\(roundedSeconds)"
         if (seconds <= 0) {
             timer.invalidate()
             self.performSegue(withIdentifier: "finalSegue", sender: self)
