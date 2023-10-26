@@ -9,18 +9,17 @@ import UIKit
 
 class FiveSecondVC: UIViewController {
     
+    
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var timesPressedLabel: UILabel!
     @IBOutlet weak var buttonMash: UIButton!
     
     
-    
-    var seconds = 5
+    var seconds = 5.00
     var timer = Timer()
     var isTimerRunning = false
     var timesPressedCount = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +27,6 @@ class FiveSecondVC: UIViewController {
         timesPressedLabel.text = ("Times Pressed: 0")
         timesPressedCount = 0
         buttonMash.isEnabled = false
-        
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func increaseTotalClicks(_ sender: UIButton) {
@@ -44,17 +40,22 @@ class FiveSecondVC: UIViewController {
         buttonMash.isEnabled = true;
     }
     
+    
+        
     func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
     }
     
     @objc func updateTimer() {
-        seconds -= 1
-        timeLabel.text = "\(seconds) seconds"
-        if (seconds <= 0) {
+        if (seconds <= 0.00) {
             timer.invalidate()
             self.performSegue(withIdentifier: "finalSegue", sender: self)
             startButton.isEnabled = true
+            timeLabel.text = "0.00"
+        } else {
+            seconds -= 0.01
+            let roundedSeconds = NSString(format: "%.2f", seconds)
+            timeLabel.text = "\(roundedSeconds)"
         }
     }
     

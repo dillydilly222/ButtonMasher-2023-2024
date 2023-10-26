@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.black
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
+        let FinalVC = segue.source as! FinalVC
+    }
 
 
 }
