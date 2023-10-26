@@ -134,10 +134,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pxu-mH-98P">
-                                <rect key="frame" x="150" y="304.5" width="114" height="301"/>
+                                <rect key="frame" x="150" y="304.5" width="114" height="257"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrV-YH-HPJ">
-                                        <rect key="frame" x="5.5" y="0.0" width="103" height="42"/>
+                                        <rect key="frame" x="5.5" y="0.0" width="103" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="5 seconds"/>
                                         <connections>
@@ -145,7 +145,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhV-Sm-9p6">
-                                        <rect key="frame" x="2" y="52" width="110.5" height="41.5"/>
+                                        <rect key="frame" x="2" y="44.5" width="110.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="15 seconds"/>
                                         <connections>
@@ -153,7 +153,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ark-Ar-Anb">
-                                        <rect key="frame" x="0.5" y="103.5" width="113.5" height="42"/>
+                                        <rect key="frame" x="0.5" y="89" width="113.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="30 seconds"/>
                                         <connections>
@@ -161,7 +161,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fut-Ws-55g">
-                                        <rect key="frame" x="0.5" y="155.5" width="113.5" height="42"/>
+                                        <rect key="frame" x="0.5" y="133.5" width="113.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="45 seconds"/>
                                         <connections>
@@ -169,7 +169,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEz-cy-wgT">
-                                        <rect key="frame" x="0.5" y="207.5" width="113.5" height="41.5"/>
+                                        <rect key="frame" x="0.5" y="178" width="113.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="60 seconds"/>
                                         <connections>
@@ -177,7 +177,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIo-Xy-Ft5">
-                                        <rect key="frame" x="0.0" y="259" width="114" height="42"/>
+                                        <rect key="frame" x="0.0" y="222.5" width="114" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Instructions"/>
                                         <connections>
@@ -339,6 +339,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                                <connections>
+                                    <segue destination="L8n-Mx-n2v" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="dFL-Gk-1WV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8MZ-Fb-Ptr"/>
@@ -351,6 +354,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCo-t7-4kd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="L8n-Mx-n2v" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3253.6231884057975" y="-28.125"/>
         </scene>
@@ -490,7 +494,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="N0n-C0-P4b"/>
+        <segue reference="6nz-0L-8lk"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="buttonPresser" width="152" height="150"/>
