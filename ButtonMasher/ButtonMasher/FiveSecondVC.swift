@@ -24,6 +24,7 @@ class FiveSecondVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.black
         timesPressedLabel.text = ("Times Pressed: 0")
         timesPressedCount = 0
         buttonMash.isEnabled = false
