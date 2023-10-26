@@ -17,6 +17,7 @@ class FinalVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.black
         infoLabel1.text = infoLabelText1
         infoLabel2.text = infoLabelText2
         // Do any additional setup after loading the view.
