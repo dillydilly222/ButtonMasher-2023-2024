@@ -14,13 +14,10 @@ class FiveSecondVC: UIViewController {
     @IBOutlet weak var timesPressedLabel: UILabel!
     @IBOutlet weak var buttonMash: UIButton!
     
-    
-    
     var seconds = 5
     var timer = Timer()
     var isTimerRunning = false
     var timesPressedCount = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +25,6 @@ class FiveSecondVC: UIViewController {
         timesPressedLabel.text = ("Times Pressed: 0")
         timesPressedCount = 0
         buttonMash.isEnabled = false
-        
-
         // Do any additional setup after loading the view.
     }
     
@@ -45,7 +40,7 @@ class FiveSecondVC: UIViewController {
     }
     
     func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.00, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
     }
     
     @objc func updateTimer() {
